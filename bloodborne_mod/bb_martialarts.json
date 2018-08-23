@@ -22,8 +22,18 @@
     "onhit_buffs": [
       {
         "id": "bb_kariudo_hit_buff",
-        "name": "内臓攻撃",
-        "description": "内臓攻撃のチャンスです！",
+        "name": "回避",
+        "description": "回避して隙を作りました。",
+        "min_melee": 5,
+        "buff_duration": 2,
+        "max_stacks": 1
+      }
+    ],
+    "ondodge_buffs": [
+      {
+        "id": "bb_kariudo_dodge_buff",
+        "name": "ダウン",
+        "description": "攻撃してダウンを取りました。",
         "min_melee": 5,
         "buff_duration": 2,
         "max_stacks": 1
@@ -59,7 +69,7 @@
     "name": "内臓攻撃",
     "min_unarmed": 5,
     "dodge_counter": true,
-    "req_buffs": ["bb_kariudo_hit_buff"],
+    "req_buffs": ["bb_kariudo_hit_buff", "bb_kariudo_dodge_buff"],
     "mult_bonuses": [["movecost", 0.0]],
     "messages": [
       "%sの隙を付いて内臓攻撃を繰り出し",
